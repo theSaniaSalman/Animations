@@ -12,10 +12,7 @@ body{
     width:5%;
     padding-left:70px;
     padding-top:40px;
-    box-shadow: 8px 5px white;
-    animation-name: moon-anime;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;   
+    box-shadow: 8px 5px white;  
 }
 #crescent p{
     visibility: hidden;
@@ -166,14 +163,35 @@ margin-top:-30px;
 #pole p{
     visibility: hidden;
 }
- @keyframes moon-anime{
-     0%{
-         opacity:0.6;
-     }
-     50%{
-         opacity:1;
-     }
- }
+#head-light{
+    background-color:yellow;
+    width:7%;
+    position:absolute;
+    bottom:385px;
+    left:966px;
+    padding-top:25px;
+    padding-bottom:15px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    transform:rotate(90deg);
+    transform:skewX(-60deg);
+    animation-name:blink;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+}
+#head-light p{
+    visibility: hidden;
+}
+
+@keyframes blink{
+    0%{
+        background-color: yellow;
+    }
+    50%{
+        background-color: white;
+    }
+}
 @keyframes twinkle{
     0%{
         color:blue;
